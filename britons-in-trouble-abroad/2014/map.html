@@ -109,7 +109,7 @@
         },
         {
           'min': 1000,
-          'max': 5000,
+          'max': 4000,
           'color': colors.HOT
         }
       ],
@@ -117,12 +117,12 @@
         {
           'min': 0,
           'max': 1,
-          'color': colors.NA
+          'color': colors.COLD
         },
         {
           'min': 1,
           'max': 5,
-          'color': colors.COLD
+          'color': colors.CHILLY
         },
         {
           'min': 5,
@@ -175,22 +175,22 @@
         },
         {
           'min': 5,
-          'max': 20,
+          'max': 10,
           'color': colors.CHILLY
         },
         {
-          'min': 20,
-          'max': 100,
+          'min': 10,
+          'max': 50,
           'color': colors.MILD
+        },
+        {
+          'min': 50,
+          'max': 100,
+          'color': colors.WARM
         },
         {
           'min': 100,
           'max': 1000,
-          'color': colors.WARM
-        },
-        {
-          'min': 1000,
-          'max': 2000,
           'color': colors.HOT
         }
       ],
@@ -225,12 +225,12 @@
         {
           'min': 0,
           'max': 1,
-          'color': colors.NA
+          'color': colors.COLD
         },
         {
           'min': 1,
           'max': 5,
-          'color': colors.COLD
+          'color': colors.CHILLY
         },
         {
           'min': 5,
@@ -252,52 +252,47 @@
         {
           'min': 0,
           'max': 1,
-          'color': colors.NA
+          'color': colors.COLD
         },
         {
           'min': 1,
           'max': 5,
-          'color': colors.COLD
+          'color': colors.MILD
         },
         {
           'min': 5,
           'max': 10,
-          'color': colors.MILD
+          'color': colors.WARM
         },
         {
           'min': 10,
           'max': 20,
-          'color': colors.WARM
-        },
-        {
-          'min': 20,
-          'max': 50,
           'color': colors.HOT
         }
       ],
       'Issue of emergency travel documentation': [
         {
           'min': 0,
-          'max': 5,
+          'max': 10,
           'color': colors.COLD
         },
         {
-          'min': 5,
-          'max': 20,
-          'color': colors.CHILLY
-        },
-        {
-          'min': 20,
+          'min': 10,
           'max': 100,
-          'color': colors.MILD
+          'color': colors.CHILLY
         },
         {
           'min': 100,
           'max': 1000,
-          'color': colors.WARM
+          'color': colors.MILD
         },
         {
           'min': 1000,
+          'max': 2000,
+          'color': colors.WARM
+        },
+        {
+          'min': 2000,
           'max': 6000,
           'color': colors.HOT
         }
@@ -534,7 +529,7 @@
 
         // Add popup control
         addGenericControl(map, "&#8599;", "Open map in a separate window", 2, function() {
-            var w = window.open('/map.html', 'map', 'height=768,width=1024');
+            var w = window.open('/britons-in-trouble-abroad/2014/map.html', 'map', 'height=768,width=1024');
             if (window.focus) {w.focus()}
             return false;
         });

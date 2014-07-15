@@ -51,11 +51,13 @@
         padding-top: 0.5em;
     }
     .fco-link {
-        position: absolute;
-        background: url('/britons-in-trouble-abroad/assets/img/fco_background.gif') top left repeat;
-        padding-left: 43px;
-        height: 44px;
-        width: 100%;
+        /*position: absolute;*/
+        /*background: url('/britons-in-trouble-abroad/assets/img/fco_background.gif') top left repeat;*/
+        /*padding-left: 11px;*/
+        /*padding-top: 8px;*/
+        padding-bottom: 4px;
+        /*height: 44px;*/
+        /*width: 100%;*/
     }
     .jqmWindow {
         max-height: 300px;
@@ -520,7 +522,7 @@
 
         // Logo
         var logo = $(".fco-link")[0];
-        map.controls[google.maps.ControlPosition.TOP_CENTER].push(logo);
+        map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(logo);
 
 
         // Layer controls
@@ -679,7 +681,7 @@
 <body>
     <div id="map_canvas"></div>
     <a href="https://www.gov.uk/knowbeforeyougo" target="_blank" class="fco-link">
-      <img id="fco_attr" src="/britons-in-trouble-abroad/assets/img/logo_fco.gif" alt="" width="146" height="44">
+      <img id="fco_attr" src="/britons-in-trouble-abroad/assets/img/logo_fco.png" alt="" width="312" height="27">
     </a>
 
     <div class="embed jqmWindow">
